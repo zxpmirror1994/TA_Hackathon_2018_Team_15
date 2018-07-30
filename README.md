@@ -1,1 +1,1 @@
-# TA_Hackathon_2018_Team_15
+# Generate Property-Unique QR codes at scale for venue marketing collateral
