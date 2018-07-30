@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <title>Business Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link href='https://fonts.googleapis.com/css?family=ArialMT|Tahoma' rel='stylesheet' type='text/css'> -->
+  <link href='../style/style.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-8 col-lg-offset-2">
+
+        <div class="header-bar">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="../style/TA_logo.svg" class="img-fluid TA_logo" alt="Responsive image">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-header">QR Code Generator - Business</div>      
+
+        <form id="contact-form" method="get" action="/biz/onsubmit" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+
+            <p class="lead">Choose the Page You Want QR Code For</p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <select class="form-control form-box" name="details_or_reviews">
+                    <option selected>Please select</option>
+                    <option value="Detail Page">Detail Page</option>
+                    <option value="Write a Review Page">Write a Review Page</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            
+            <p class="lead">Choose the Asset You Want QR Code on</p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <select class="form-control form-box" name="asset_name">
+                    <option selected>Please select</option>
+                    <option value="Stickers">Stickers</option>
+                    <option value="Business Cards Type 1">Business Cards Type 1</option>
+                    <option value="Business Cards Type 2">Business Cards Type 2</option>
+                    <option value="QR Code Image">QR Code Image</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+
+            <p class="lead">Choose the Location(s) You Are Interested In</p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_location_id" class="form-label">Location ID</label>
+                  <input id="form_location_id" type="text" name="location_id" class="form-control form-box" placeholder="Please enter location ID">
+                  <div class="form-note">Note: Skip the rest of this section if Location ID is specified</div>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_geo_name" class="form-label">Geo Name</label>
+                  <input id="form_geo_name" type="text" name="geo_name" class="form-control form-box" placeholder="Please enter geo name (default all)">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_country_primaryname" class="form-label">Country Primary Name</label>
+                  <input id="form_country_primaryname" type="text" name="country_primaryname" class="form-control form-box" placeholder="Please enter country primary name (default all)">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="form_limit" class="form-label">Limit</label>
+                  <input id="form_limit" type="text" name="limit" class="form-control form-box" placeholder="Please enter limit (default 100)">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+
+
+            <p class="lead">Choose the Type(s) You Are Interested In</p>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="is_accomodation" id="form_is_accomodation" value="option1" checked=checked>
+                  <label class="form-check-label" for="form_is_accomodation">
+                    Accommodation
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="is_bnb" id="form_is_bnb" value="option2" checked=checked>
+                  <label class="form-check-label" for="form_is_bnb">
+                    Bnb
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="is_hotel" id="form_is_hotel" value="option3" checked=checked>
+                  <label class="form-check-label" for="form_is_hotel">
+                    Hotel
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="is_vr" id="form_is_vr" value="option4" checked=checked>
+                  <label class="form-check-label" for="form_is_vr">
+                    Vr
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="is_resort" id="form_is_resort" value="option5" checked=checked>
+                  <label class="form-check-label" for="form_is_resort">
+                    Resort
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="is_restaurant" id="form_is_restaurant" value="option6" checked=checked>
+                  <label class="form-check-label" for="form_is_restaurant">
+                    Restaurant
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" name="is_attraction" id="form_is_attraction" value="option7" checked=checked>
+                  <label class="form-check-label" for="form_is_attraction">
+                    Attraction
+                  </label>
+                </div>  
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Submit">
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+      </div><!-- /.8 -->
+
+    </div> <!-- /.row-->
+
+  </div> <!-- /.container-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

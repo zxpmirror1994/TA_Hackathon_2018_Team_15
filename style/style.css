@@ -1,0 +1,99 @@
+body {
+    font-family: ArialMT,Tahoma,'Bitstream Vera Sans',sans-serif;
+}
+
+label {
+    color: #333;
+}
+
+.header-bar {
+  display: block;
+  vertical-align: middle;
+  background-color: #00a680;
+  height: 50px;
+}
+
+.form-header {
+  font-family: 'Source Sans Pro',helvetica,arial,sans-serif;
+  font-size: 24px;
+  color: #00a680;
+  line-height: 1.5em;
+  padding-top: 30px;
+  width: 954px;
+  margin-top: 40px;
+  font-weight: 200;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #666;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+}
+
+.form-box {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-check-label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+}
+
+.form-note {
+  margin-top: 5px;
+  display: block;
+  font-size: 10px;
+  color: #666;
+  font-weight: 200;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.btn-send {
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.btn-success {
+    background-color: #00a680;
+    border-color: #00a680;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TA_logo {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.lead {
+  display: block;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: 'Source Sans Pro',helvetica,arial,sans-serif;
+  color: #00a680;
+  -webkit-font-smoothing: antialiased;
+}
+

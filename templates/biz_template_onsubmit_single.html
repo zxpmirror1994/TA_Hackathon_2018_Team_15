@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <title>User's QR Code</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+  <link href='../style/style.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-8 col-lg-offset-2">
+        
+        <div class="header-bar">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="../style/TA_logo.svg" class="img-fluid TA_logo" alt="Responsive image">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-header">Here is Your QR Code!</div>
+        <div class="row">
+          <div class="col-md-12">
+            <img src={{qr_path}} class="img-thumbnail" alt="Responsive image">
+          </div>
+        </div>
+
+        <form id="contact-form" method="get" action="/biz" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+            <div class="row">
+              <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Return">
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+      </div><!-- /.8 -->
+
+    </div> <!-- /.row-->
+
+  </div> <!-- /.container-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

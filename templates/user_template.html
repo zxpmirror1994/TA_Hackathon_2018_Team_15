@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <title>User Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+  <link href='../style/style.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-8 col-lg-offset-2">
+
+        <div class="header-bar">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="../style/TA_logo.svg" class="img-fluid TA_logo" alt="Responsive image">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-header">QR Code Generator - User</div>
+
+        <form id="contact-form" method="get" action="/user/onsubmit" role="form">
+
+          <div class="messages"></div>
+
+          <div class="controls">
+            <p class="lead">Choose the Page You Want QR Code For</p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <select class="form-control form-box" name="details_or_reviews">
+                    <option selected>Please select</option>
+                    <option value="Detail Page">Detail Page</option>
+                    <option value="Write a Review Page">Write a Review Page</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <p class="lead">Choose the Asset You Want QR Code on</p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <select class="form-control form-box" name="asset_name">
+                    <option selected>Please select</option>
+                    <option value="Stickers">Stickers</option>
+                    <option value="Business Cards Type 1">Business Cards Type 1</option>
+                    <option value="Business Cards Type 2">Business Cards Type 2</option>
+                    <option value="QR Code Image">QR Code Image</option>
+                  </select>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <p class="lead">Choose the Location You Are Interested In</p>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="form_location_id" class="form-label">Property Name</label>
+                  <select class="form-control form-box" name="property_choice">
+                    <option selected>Please select</option>
+                    <option value="Rod Thai Cuisine">Rod Thai Cuisine</option>
+                    <option value="Al's State Street Cafe">Al's State Street Cafe</option>
+                    <option value="Hungry Travelers">Hungry Travelers</option>
+                    <option value="Pho Pasteur">Pho Pasteur</option>
+                    <option value="Philadelphia Steak & Hoagie">Philadelphia Steak & Hoagie</option>
+                  </select>
+                  <!-- <input id="form_location_id" type="text" name="location_id" class="form-control form-box" placeholder="Please enter property name"> -->
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Submit">
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+      </div><!-- /.8 -->
+
+    </div> <!-- /.row-->
+
+  </div> <!-- /.container-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
